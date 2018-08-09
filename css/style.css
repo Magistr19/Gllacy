@@ -1,0 +1,56 @@
+﻿body {
+	margin: 0;
+	padding: 0;
+	
+	font-style: normal;
+	font-family: 'Roboto', 'Arial' sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	color: #ffffff;
+
+	background-color: #849d8f;
+}
+
+.main-container {
+	min-width: 900px;
+	max-width: 1200px;
+	min-height: 881px;
+	margin: 0 auto;
+	padding: 0 20px;
+	
+	background-image: url("../img/backlight.png");
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+/* .main-nav {
+	display: flex;
+} */
+
+.logo-link {
+	margin-top: 9px;
+	display: inline-block;
+}
+
+.site-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 560px;
+	min-height: 73px;
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+
+.site-nav a {
+	display: block;
+
+	font-weight: 700;
+	line-height: 18px;
+	color: #ffffff;
+	text-decoration: none;
+
+	border-bottom: 1px solid #b2cabd;
+}
