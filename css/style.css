@@ -12,6 +12,30 @@
 	background-color: #849d8f;
 }
 
+.text-input {
+	box-sizing: border-box;
+	width: 311px;
+	height: 44px;
+	padding-left: 15px;
+
+	font-size: 16px;
+	line-height: 24px;
+	color: #323232;
+
+	border: 1px solid #d3d3d2;
+	border-radius: 5px;
+}
+
+
+
+.text-input:hover {
+	border: 2px solid #c7c6c5;
+}
+
+.text-input:focus {
+	border: 2px solid #8fbdec;
+}
+
 .visually-hidden {
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -152,7 +176,8 @@
 	padding-bottom: 3px;
 }
 
-.site-nav .new-item:hover > .drop-down  {
+.site-nav .new-item:hover > .drop-down,
+.site-nav .new-item a:focus + .drop-down  {
 	display: block;
 }
 
@@ -267,6 +292,85 @@
 	border-radius: 5px 5px 0 0;
 }
 
+
+
+.search-container {
+	position: relative;
+	padding-bottom: 7px;
+}
+
+.search-container:hover > .search-btn,
+.search-btn:focus {
+	background-color: #f8f7f4;
+	background-image: url("../img/search-btn-hover.png");
+}
+
+.search-container:hover > .search-form,
+.search-btn:focus ~ .search-form  {
+	display: flex;
+}
+
 .search-btn {
-	padding: 0 8px;
+	width: 32px;
+
+	background-image: url("../img/search-btn.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.search-form {
+	position: absolute;
+	top: 38px;
+	left: -309px;
+	
+	display: none;
+	justify-content: center;
+	align-items: center;
+	width: 340px;
+	height: 84px;
+
+	background-color: #f8f7f4;
+	border-radius: 5px;
+  	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.login-btn {
+	position: relative;
+
+	width: auto;
+	padding-top: 8px;
+	padding-left: 44px;
+	padding-right: 16px;
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	color: #ffffff;
+	text-decoration: none;
+
+	border-radius: 15px;
+}
+
+.login-btn::before {
+	position: absolute;
+	top: 7px;
+	left: 16px;
+	
+	width: 20px;
+	height: 19px;
+
+	background-image: url("../img/login-btn.svg");
+
+	content: "";
+}
+
+.login-btn:hover::before {
+	background-image: url("../img/login-btn-hover.png");
+}
+
+
+.login-btn:hover {
+	color: #323232;
+
+	background-color: #f8f7f4;
 }
