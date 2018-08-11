@@ -72,6 +72,36 @@
 	background-color: rgba(255, 255, 255, 0.2);
 }
 
+.btn {
+	display: inline-block;
+	box-sizing: border-box;
+	height: 44px;
+	padding: 0;
+	
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	vertical-align: top;
+	color: #fefefe;
+
+	border: none;
+	background-color: #ed5a3d;
+	background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+	box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.7);
+}
+
+.btn:hover,
+.btn:focus {
+    background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+}
+
+.btn:active {
+  background-image: -ms-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.7);
+}
+
+
+
 /* HEADER */
 
 .main-nav {
@@ -373,4 +403,27 @@
 	color: #323232;
 
 	background-color: #f8f7f4;
+}
+
+.login-form {
+	width: 277px;
+	height: 214px;
+	
+	background-color: #f8f7f4;
+	border-radius: 5px;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.login-email {
+	width: 240px;
+}
+
+.login-password {
+	width: 240px;
+}
+
+.btn-submit-login {
+	padding: 0 25px;
+
+	border-radius: 16px/22px;
 }
