@@ -34,19 +34,55 @@
 					<input class="text-input" type="text" id="search" name="search-field" placeholder="Что ищем?">
 				</form>
 			</div>
-			<a class="nav-btn login-btn" href="#">Вход</a>
-			<form class="login-form" action="#" method="post">
-				<label class="visually-hidden" for="email">Почта:</label>
-				<input class="text-input login-email" type="email" id="email" name="email-field" placeholder="Электронная почта">
-				<label class="visually-hidden" for="passowrd">Пароль:</label>
-				<input class="text-input login-password" type="password" id="passowrd" name="password-field" placeholder="Пароль">
-				<a href="#">Забыли пароль?</a>
-				<a href="#">Новая регистрация</a>
-				<button class="btn btn-submit-login" type="submit">Войти</button>
-			</form>
-			<a class="nav-btn trash-btn" href="#">
-				<span class="visually-hidden">Кнопка корзины</span>
-			</a>
+			<div class="login-container">
+				<a class="nav-btn login-btn" href="#">Вход</a>
+				<form class="login-form" action="#" method="post">
+					<div class="login-input-container">
+						<label class="visually-hidden" for="email">Почта:</label>
+						<input class="text-input login-email" type="email" id="email" name="email-field" placeholder="Электронная почта">
+						<label class="visually-hidden" for="passowrd">Пароль:</label>
+						<input class="text-input login-password" type="password" id="passowrd" name="password-field" placeholder="Пароль">
+					</div>
+					<div class="login-btn-container">
+						<button class="btn btn-submit-login" type="submit">Войти</button>
+						<p class="login-links-container">
+							<a href="#">Забыли пароль?</a>
+							<a href="#">Новая регистрация</a>
+						</p>
+					</div>
+				</form>
+			</div>
+			<div class="backet-container">
+				<a class="nav-btn backet-btn" href="#" aria-label="Корзина">2 товара</a>
+				<form class="backet-form" action="#" method="post">
+					<table class="backet-list">
+						<tr class="backet-item">
+							<td class="delete"><button class="delete-item" type="button" aria-label="Удалить товар"></button></td>
+							<td class="image-item"><p class="image-wrapper"><img src="img/test.jpg" alt="Мороженное"></p></td>
+							<td class="name-of-item">Пломбир с апельсиновым джемом</td>
+							<td class="weight-and-price">
+								<span class="weight">1,5 кг x</span>
+								<span class="price-for-weight">200 руб.</span>
+							</td>
+							<td class="total-price">300 руб.</td>
+						</tr>
+						<tr class="backet-item">
+							<td class="delete"><button class="delete-item" type="button" aria-label="Удалить товар"></button></td>
+							<td class="image-item"><p class="image-wrapper"><img src="img/test.jpg" alt="Мороженное"></p></td>
+							<td class="name-of-item">Пломбир с апельсиновым джемом</td>
+							<td class="weight-and-price">
+								<span class="weight">1,5 кг x</span>
+								<span class="price-for-weight">200 руб.</span>
+							</td>
+							<td class="total-price">300 руб.</td>
+						</tr>
+					</table>
+					<p class="price-for-all">Итого: 750 руб.</p>
+					<div class="backet-btn-order-container">
+					<button class="btn backet-order-btn">Оформить заказ</button>
+					</div>
+				</form>
+			</div>
 		</div>
 	</nav>
 	<p class="shedule">
