@@ -9,88 +9,101 @@
 </head>
 <body>
 	<div class="main-container">
-<header class="main-header">
-	<nav class="main-nav">
-		<ul class="site-nav">
-			<li><a class="logo-link"><img src="img/logo.png" alt="GllacyShop лого"></a></li>
-			<li class="new-item">
-				<a href="catalog.html">Каталог</a>
-				<ul class="drop-down">
-					<li><a class="new" href="#">Новинки</a></li>
-					<li><a href="#">Сливочное</a></li>
-					<li><a href="#">Щербеты</a></li>
-					<li><a href="#">Фруктовый лед</a></li>
-					<li><a href="#">Мелорин</a></li>
+		<header class="main-header">
+			<h1 class="visually-hidden">Gllacy Shop</h1>
+			<nav class="main-nav">
+				<ul class="site-nav">
+					<li><a class="logo-link"><img src="img/logo.png" alt="GllacyShop лого"></a></li>
+					<li class="new-item">
+						<a class="catalog-link" href="catalog.html">Каталог</a>
+						<ul class="drop-down">
+							<li><a class="new" href="#">Новинки</a></li>
+							<li><a href="#">Сливочное</a></li>
+							<li><a href="#">Щербеты</a></li>
+							<li><a href="#">Фруктовый лед</a></li>
+							<li><a href="#">Мелорин</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">О Компании</a></li>
 				</ul>
-			</li>
-			<li><a href="#">Доставка и оплата</a></li>
-			<li><a href="#">О Компании</a></li>
-		</ul>
-		<div class="nav-buttons">
-			<div class="search-container">
-				<button type="button" class="nav-btn search-btn"><span class="visually-hidden">Кнопка поиска</span></button>
-				<form class="search-form" action="#" method="get">
-					<label class="visually-hidden" for="search">Что ищем?</label>
-					<input class="text-input" type="text" id="search" name="search-field" placeholder="Что ищем?">
-				</form>
-			</div>
-			<div class="login-container">
-				<a class="nav-btn login-btn" href="#">Вход</a>
-				<form class="login-form" action="#" method="post">
-					<div class="login-input-container">
-						<label class="visually-hidden" for="email">Почта:</label>
-						<input class="text-input login-email" type="email" id="email" name="email-field" placeholder="Электронная почта">
-						<label class="visually-hidden" for="passowrd">Пароль:</label>
-						<input class="text-input login-password" type="password" id="passowrd" name="password-field" placeholder="Пароль">
+				<div class="nav-buttons">
+					<div class="search-container">
+						<button type="button" class="nav-btn search-btn"><span class="visually-hidden">Кнопка поиска</span></button>
+						<form class="search-form" action="#" method="get">
+							<label class="visually-hidden" for="search">Что ищем?</label>
+							<input class="text-input" type="text" id="search" name="search-field" placeholder="Что ищем?">
+						</form>
 					</div>
-					<div class="login-btn-container">
-						<button class="btn btn-submit-login" type="submit">Войти</button>
-						<p class="login-links-container">
-							<a href="#">Забыли пароль?</a>
-							<a href="#">Новая регистрация</a>
-						</p>
+					<div class="login-container">
+						<a class="nav-btn login-btn" href="#">Вход</a>
+						<form class="login-form" action="#" method="post">
+							<div class="login-input-container">
+								<label class="visually-hidden" for="email">Почта:</label>
+								<input class="text-input login-email" type="email" id="email" name="email-field" placeholder="Электронная почта">
+								<label class="visually-hidden" for="passowrd">Пароль:</label>
+								<input class="text-input login-password" type="password" id="passowrd" name="password-field" placeholder="Пароль">
+							</div>
+							<div class="login-btn-container">
+								<button class="btn btn-submit-login" type="submit">Войти</button>
+								<p class="login-links-container">
+									<a href="#">Забыли пароль?</a>
+									<a href="#">Новая регистрация</a>
+								</p>
+							</div>
+						</form>
 					</div>
-				</form>
-			</div>
-			<div class="backet-container">
-				<a class="nav-btn backet-btn" href="#" aria-label="Корзина">2 товара</a>
-				<form class="backet-form" action="#" method="post">
-					<table class="backet-list">
-						<tr class="backet-item">
-							<td class="delete"><button class="delete-item" type="button" aria-label="Удалить товар"></button></td>
-							<td class="image-item"><p class="image-wrapper"><img src="img/test.jpg" alt="Мороженное"></p></td>
-							<td class="name-of-item">Пломбир с апельсиновым джемом</td>
-							<td class="weight-and-price">
-								<span class="weight">1,5 кг x</span>
-								<span class="price-for-weight">200 руб.</span>
-							</td>
-							<td class="total-price">300 руб.</td>
-						</tr>
-						<tr class="backet-item">
-							<td class="delete"><button class="delete-item" type="button" aria-label="Удалить товар"></button></td>
-							<td class="image-item"><p class="image-wrapper"><img src="img/test.jpg" alt="Мороженное"></p></td>
-							<td class="name-of-item">Пломбир с апельсиновым джемом</td>
-							<td class="weight-and-price">
-								<span class="weight">1,5 кг x</span>
-								<span class="price-for-weight">200 руб.</span>
-							</td>
-							<td class="total-price">300 руб.</td>
-						</tr>
-					</table>
-					<p class="price-for-all">Итого: 750 руб.</p>
-					<div class="backet-btn-order-container">
-					<button class="btn backet-order-btn">Оформить заказ</button>
+					<div class="backet-container">
+						<a class="nav-btn backet-btn" href="#" aria-label="Корзина">2 товара</a>
+						<form class="backet-form" action="#" method="post">
+							<table class="backet-list">
+								<tr class="backet-item">
+									<td class="delete"><button class="delete-item" type="button" aria-label="Удалить товар"></button></td>
+									<td class="image-item"><p class="image-wrapper"><img src="img/test.jpg" alt="Мороженное"></p></td>
+									<td class="name-of-item">Пломбир с апельсиновым джемом</td>
+									<td class="weight-and-price">
+										<span class="weight">1,5 кг x</span>
+										<span class="price-for-weight">200 руб.</span>
+									</td>
+									<td class="total-price">300 руб.</td>
+								</tr>
+								<tr class="backet-item">
+									<td class="delete"><button class="delete-item" type="button" aria-label="Удалить товар"></button></td>
+									<td class="image-item"><p class="image-wrapper"><img src="img/test-2.jpg" alt="Мороженное"></p></td>
+									<td class="name-of-item">Клубничный пломбир с присыпкой 
+									из белого шоколада</td>
+									<td class="weight-and-price">
+										<span class="weight">1,5 кг x</span>
+										<span class="price-for-weight">300 руб.</span>
+									</td>
+									<td class="total-price">450 руб.</td>
+								</tr>
+							</table>
+							<p class="price-for-all">Итого: 750 руб.</p>
+							<div class="backet-btn-order-container">
+							<button class="btn backet-order-btn">Оформить заказ</button>
+							</div>
+						</form>
 					</div>
-				</form>
-			</div>
-		</div>
-	</nav>
-	<p class="shedule">
-		<span class="work-time"></span>
-		<span class="phone-number"></span>
-	</p>
-</header>
-
+				</div>
+			</nav>
+			<p class="shedule">
+				<span class="work-time">С 10 до 20, ежедневно</span><br>
+				<span class="phone-number">8 812 450-25-25</span>
+			</p>
+		</header>
+		<main class="main-index">
+			<section class="slider">
+				<h2 class="visually-hidden">Слайдер мороженных</h2>
+				<p class="name-of-product-1">Крем-брюле и пломбир
+				с малиновым джемом</p>
+				<p class="name-of-product-2">Крем-брюле и пломбир
+				с малиновым джемом</p>
+				<p class="name-of-product-3">Крем-брюле и пломбир
+				с малиновым джемом</p>
+			</section>
+		</main>
+	</div>
 	<script src="js/main.js"></script>
 </body>
 </html>

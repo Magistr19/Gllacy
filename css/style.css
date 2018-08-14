@@ -3,7 +3,7 @@
 	margin: 0;
 	padding: 0;
 	
-	font-weight: 500;
+	font-weight: 400;
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 22px;
@@ -48,13 +48,13 @@
 }
 
 .main-container {
-	min-width: 900px;
-	max-width: 1200px;
+	min-width: 860px;
+	max-width: 1146px;
 	min-height: 881px;
 	margin: 0 auto;
-	padding: 0 20px;
+	padding: 0 2.24%;
 	
-	background-image: url("../img/backlight.png");
+	background-image: url("../img/slider-bg-1.jpg");
 	background-repeat: no-repeat;
 	background-position: top center;
 }
@@ -107,6 +107,7 @@
 .main-nav {
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-start;
 }
 
 .site-nav {
@@ -123,7 +124,8 @@
 
 .site-nav .logo-link {
 	display: inline-block;
-	margin-top: 9px;
+	margin-top: 4px;
+	padding: 0;
 
 	border-bottom: none;
 }
@@ -206,9 +208,20 @@
 	padding-bottom: 3px;
 }
 
-.site-nav .new-item:hover > .drop-down,
-.site-nav .new-item a:focus + .drop-down  {
+.new-item:hover > .drop-down,
+.new-item a:focus + .drop-down  {
 	display: block;
+}
+
+.site-nav .new-item:hover .catalog-link {
+	color: #333333;
+
+	background-color: #f7f6f3;
+	border-radius: 15px;
+}
+
+.new-item:hover .catalog-link::after {
+	content: none;
 }
 
 .drop-down {
@@ -322,11 +335,17 @@
 	border-radius: 5px 5px 0 0;
 }
 
-
+.nav-buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 265px;
+	margin-top: 23px;
+}
 
 .search-container {
 	position: relative;
-	padding-bottom: 7px;
+	padding-bottom: 4px;
 }
 
 .search-container:hover > .search-btn,
@@ -350,7 +369,7 @@
 
 .search-form {
 	position: absolute;
-	top: 38px;
+	top: 36px;
 	left: -309px;
 	
 	display: none;
@@ -508,10 +527,10 @@
 .backet-btn {
 	position: relative;
 
-	width: auto;
+	box-sizing: border-box;
+	width: 117px;
 	padding-top: 8px;
 	padding-left: 45px;
-	padding-right: 34px;
 
 	font-weight: 500;
 	font-size: 14px;
@@ -535,20 +554,31 @@
 	content: "";
 }
 
-.backet-container:hover .backet-btn {
+.backet-container:hover .backet-btn,
+.backet-btn:focus {
 	color: #323232;
 	background-color: #f7f6f3;
 }
 
-.backet-container:hover .backet-btn::before {
+.backet-container:hover .backet-btn::before,
+.backet-btn:focus::before {
 	background-image: url("../img/backet-hover.png");
+}
+
+.backet-container:hover .backet-form {
+	display: block;
+}
+
+.backet-btn:focus + .backet-form {
+	display: block;
 }
 
 .backet-form {
 	position: absolute;
 	top: 36px;
 	right: 0px;
-
+	
+	display: none;
 	width: 540px;
 	min-height: 115px;
 
@@ -699,11 +729,28 @@
 
 .backet-order-btn {
 	margin-left: auto;
-	margin-top: 18px;
+	margin-top: 14px;
 	margin-bottom: 20px;
 	margin-right: 22px;
 	padding-left: 15px;
 	padding-right: 15px;
 
 	border-radius: 16px/22px;
+}
+
+.shedule {
+	margin: 0;
+
+	font-weight: 700;
+	text-align: end;
+}
+
+.work-time {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.phone-number {
+	font-size: 22px;
+	line-height: 24px;
 }
