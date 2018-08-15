@@ -55,7 +55,7 @@
 					</div>
 					<div class="backet-container">
 						<a class="nav-btn backet-btn" href="#" aria-label="Корзина">2 товара</a>
-						<form class="backet-form" action="#" method="post">
+						<div class="backet-form">
 							<table class="backet-list">
 								<tr class="backet-item">
 									<td class="delete"><button class="delete-item" type="button" aria-label="Удалить товар"></button></td>
@@ -81,9 +81,9 @@
 							</table>
 							<p class="price-for-all">Итого: 750 руб.</p>
 							<div class="backet-btn-order-container">
-							<button class="btn backet-order-btn">Оформить заказ</button>
+							<a class="btn backet-order-btn">Оформить заказ</a>
 							</div>
-						</form>
+						</div>
 					</div>
 				</div>
 			</nav>
@@ -95,12 +95,28 @@
 		<main class="main-index">
 			<section class="slider">
 				<h2 class="visually-hidden">Слайдер мороженных</h2>
-				<p class="name-of-product-1">Крем-брюле и пломбир
-				с малиновым джемом</p>
-				<p class="name-of-product-2">Крем-брюле и пломбир
-				с малиновым джемом</p>
-				<p class="name-of-product-3">Крем-брюле и пломбир
-				с малиновым джемом</p>
+				<ul class="products-list">
+					<li class="name-of-product product-1"><h3>Крем-брюле и пломбир
+					с малиновым джемом</h3></li>
+					<li class="name-of-product product-2"><h3>Крем-брюле и пломбир
+					с малиновым джемом</h3></li>
+					<li class="name-of-product product-3"><h3>Крем-брюле и пломбир
+					с малиновым джемом</h3></li>
+				</ul>
+				<ul class="slider-switch-list">
+					<li>
+						<input class="visually-hidden" type="radio" name="slider-switch" id="slider-switch-1" checked>
+						<label class="slider-label" for="slider-switch-1"></label></li>
+					<li>
+						<input class="visually-hidden" type="radio" name="slider-switch" id="slider-switch-2">
+						<label class="slider-label" for="slider-switch-2"></label>
+					</li>
+					<li>
+						<input class="visually-hidden" type="radio" name="slider-switch" id="slider-switch-3">
+						<label class="slider-label" for="slider-switch-3"></label>
+					</li>
+				</ul>
+				<a class="btn slider-order-btn" href="#">Давайте оба!</a>
 			</section>
 		</main>
 	</div>
