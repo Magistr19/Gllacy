@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Gllacy - Каталог - Сливочное мороженное</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -16,7 +17,7 @@
 					<a class="current catalog-link" href="#">Каталог</a>
 					<ul class="drop-down">
 						<li><a class="new" href="#">Новинки</a></li>
-						<li><a class="current">Сливочное</a></li>
+						<li><a class="current" tabindex="-1">Сливочное</a></li>
 						<li><a href="#">Щербеты</a></li>
 						<li><a href="#">Фруктовый лед</a></li>
 						<li><a href="#">Мелорин</a></li>
@@ -88,7 +89,7 @@
 				<ul class="breadcrumbs">
 					<li><a href="#">Главная </a></li>
 					<li><a href="#">Каталог </a></li>
-					<li><a href="#">Сливочное </a></li>
+					<li><a tab-index="-1">Сливочное </a></li>
 				</ul>
 				<p class="shedule">
 					<span class="work-time">С 10 до 20, ежедневно</span><br>
@@ -99,6 +100,58 @@
 		<main class="main-index">
 			<div class="content-wrapper">
 				<h1 class="page-title">Сливочное мороженное</h1>
+				<section class="filter">
+					<form class="filter-form" action="#" method="get">
+						<fieldset class="filter-sort">
+							<legend>Сортировка:</legend>
+							<div class="filter-container filter-container-sort">
+								<select class="filter-sort" name="filter-sort-field" id="filter-sort">
+									<option value="sort-by-popular">по популярности</option>
+									<option value="sort-by-new">сначала новые</option>
+									<option value="sort-by-old">сначала старые</option>
+								</select>
+							</div>
+						</fieldset>
+						<fieldset class="filter-price">
+							<legend>Цена: <span class="filter-min-price">100</span> руб. - <span class="filter-max-price">500</span> руб.</legend>
+							<div class="filter-container filter-container-price">
+								<label class="visually-hidden" for="filter-range-min">Минимальная цена:</label>
+								<input class="filter-range-min" name="filter-range-min-field" id="filter-range-min" type="range" min="0" max="1000" value="100">
+								<label class="visually-hidden" for="filter-range-max">Максимальная цена:</label>
+								<input class="filter-range-max" name="filter-range-max-field" id="filter-range-max" type="range" min="0" max="1000" value="500">
+							</div>
+						</fieldset>
+						<fieldset class="filter-fatpercent">
+							<legend>Жирность:</legend>
+							<div class="filter-container filter-container-fatpercent">
+								<input class="visually-hidden" type="radio" name="fatpercent" id="fatpercent-0" value="0">
+								<label for="fatpercent-0">0%</label>
+								<input class="visually-hidden" type="radio" name="fatpercent" id="fatpercent-10" value="10" checked>
+								<label for="fatpercent-10">10%</label>
+								<input class="visually-hidden" type="radio" name="fatpercent" id="fatpercent-30" value="30">
+								<label for="fatpercent-30">30%</label>
+								<input class="visually-hidden" type="radio" name="fatpercent" id="fatpercent->30" value=">30">
+								<label for="fatpercent->30">выше 30%</label>
+							</div>
+						</fieldset>
+						<fieldset class="filet-fillers">
+							<legend>Наполнители:</legend>
+							<div class="filter-container filter-container-fillers">
+								<input class="visually-hidden" type="checkbox" name="chocolate-field" id="chocolate" checked>
+								<label for="chocolate">шоколадные</label>
+								<input class="visually-hidden" type="checkbox" name="sugarflours-field" id="sugarflours" checked>
+								<label for="sugarflours">сахарные присыпки</label>
+								<input class="visually-hidden" type="checkbox" name="fruit-field" id="fruit">
+								<label for="fruit">фрукты</label>
+								<input class="visually-hidden" type="checkbox" name="syrups-field" id="syrups">
+								<label for="syrups">сиропы</label>
+								<input class="visually-hidden" type="checkbox" name="jams-field" id="jams">
+								<label for="jams">джемы</label>
+							</div>
+						</fieldset>
+						<button class="filter-btn-sumbit">Отправить</button>
+					</form>
+				</section>
 			</div>
 		</main>
 		<footer class="main-footer">
