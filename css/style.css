@@ -1813,6 +1813,45 @@ body {
 
 .filter-container-price {
 	width: 218px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.filter-range-bar {
+	width: 176px;
+	height: 4px;
+	background-color: #d1dad3;
+	position: relative;
+}
+
+.filter-toogle {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	position: absolute;
+	top: -8px;
+	cursor: pointer;
+}
+
+.filter-toogle::before {
+	content: "";
+	width: 4px;
+	height: 4px;
+	background-color: #ababab;
+	position: absolute;
+	top: calc(50% - 2px);
+	left: calc(50% - 2px);
+	border-radius: 50%;
+}
+
+.filter-toogle-min {
+	left: 13px;
+}
+
+.filter-toogle-max {
+	right: 45px;
 }
 
 .filter-container-fatpercent {
@@ -1821,6 +1860,7 @@ body {
 
 .filter-container-fatpercent label {
 	position: relative;
+	display: block;
 
 	padding-left: 33px;
 }
@@ -1874,6 +1914,7 @@ body {
 
 .filter-container-fillers label {
 	position: relative;
+	display: block;
 
 	padding-left: 33px;
 }
