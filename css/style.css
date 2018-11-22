@@ -545,6 +545,7 @@ body {
 	line-height: 19px;
 	text-decoration: underline;
 	color: #323232;
+	display: block;
 }
 
 .login-links-container a:hover,
