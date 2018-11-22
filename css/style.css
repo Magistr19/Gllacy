@@ -48,6 +48,7 @@ body {
 
 	border: 1px solid #d3d3d2;
 	border-radius: 5px;
+	transition: border-color 0.3s ease-in;
 }
 
 .text-input:hover {
@@ -92,20 +93,21 @@ body {
 
 	border: none;
 	background-color: #ed5a3d;
-	background-image: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+	background: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
 	box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.7);
 
 	cursor: pointer;
+	transition: all 0.3s ease-in;
 }
 
 .btn:hover,
 .btn:focus {
-   background-image: linear-gradient(to bottom, rgb(245,134,105), rgb(236,111,94));
+   background: linear-gradient(to bottom, rgb(245,134,105), rgb(236,111,94));
     outline: none;
 }
 
 .btn:active {
-  background-image: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  background: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
   box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 1);
 }
 
@@ -186,12 +188,17 @@ body {
 	outline: 1px dotted #ffffff;
 }
 
+.site-nav a {
+	border-radius: 15px;
+	transition: color 0.3s ease-in,
+	background-color 0.3s ease-in;
+}
+
 .site-nav a:hover,
 .site-nav a:focus {
 	color: #333333;
 
 	background-color: #f7f6f3;
-	border-radius: 15px;
 	outline: none;
 }
 
@@ -274,6 +281,7 @@ body {
 	font-size: 14px;
 	line-height: 16px;
 	color: #323232;
+	border-radius: 0;
 
 	background-color: #f8f7f4;
 }
@@ -913,6 +921,7 @@ body {
 	border: 2px solid #ffffff;
 
 	cursor: pointer;
+	transition: background-color 0.3s ease-in;
 }
 
 .slider-label:hover {
@@ -1455,6 +1464,7 @@ body {
 	background-repeat: no-repeat;
 	background-position: -1px 0;
 	opacity: 0.8;
+	transition: opacity 0.3s ease-in;
 }
 
 .twitter {
@@ -1510,6 +1520,7 @@ body {
 	font-size: 13px;
 	line-height: 18px;
 	color: #ffffff;
+	transition: color 0.3s ease-in;
 }
 
 .additional-list a:hover,
@@ -1561,6 +1572,7 @@ body {
 
 .copyright a {
 	color: #fefefe;
+	transition: color 0.3s ease-in;
 }
 
 .copyright a:hover,
@@ -1827,6 +1839,7 @@ body {
 	opacity: 0.8;
 
 	content: "";
+	transition: opacity 0.3s ease-in;
 }
 
 .filter-container-fatpercent label:hover::before {
@@ -1878,6 +1891,7 @@ body {
 	opacity: 0.8;
 
 	content: "";
+	transition: opacity 0.3s ease-in;
 }
 
 .filter-container-fillers label:hover::before {
@@ -1920,6 +1934,8 @@ body {
 	border-radius: 15px/20px;
 
 	cursor: pointer;
+	transition: color 0.3s ease-in,
+	background-color 0.3s ease-in;
 }
 
 .filter-btn-sumbit:hover,
@@ -1985,6 +2001,8 @@ body {
 	text-decoration: none;
 
 	border-radius: 50%;
+	transition: color 0.3s ease-in,
+	background-color 0.3s ease-in;
 }
 
 .page-list a:hover,
